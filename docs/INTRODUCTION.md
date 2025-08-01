@@ -34,7 +34,7 @@ For a detailed guide on how to implement and use BLoCs, please refer to the [BLo
 
 Navigation is handled by a custom type-safe navigation system that uses guards to control access to different parts of the app.
 
--   **`AppScreen`**: Defines the screens in your application in a type-safe way.
+-   **`AppRoute`**: Defines the screen's routes in your application in a type-safe way.
 -   **`NavigationCommand`**: Represents the different navigation actions (e.g., `push`, `pop`, `replace`).
 -   **`NavigationGuard`**: Allows you to protect routes with specific conditions (e.g., checking if a user is logged in).
 
@@ -49,10 +49,6 @@ We have a standardized way of building screens that combines a contract, a BLoC,
 -   **Screen**: A Composable function that displays the UI based on the current state and sends events to the BLoC.
 
 To learn more about building screens, please read the [Screen Implementation Guide](screen_implementation.md).
-
-## 🎨 UI and Theming
-
-The UI is built entirely with Jetpack Compose. We have a custom theme that can be easily configured to match your brand. See the `ui/theme` package for more details.
 
 ## 🧪 Testing
 
